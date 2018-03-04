@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+            Задачка:
+            "Майкл, Эльдар, Абрам, Дана, Макар, Борис, Радий, Давид, Аваз, Равиль, Августин, Бахрам, Блез, Богдан, Давлат, Дамир, Казбек, Авраам, Камиль, Карен, Адам, Карим, Маджид, Агафон, Макарий, Радик, Агапит, Радомир, Эдгар, Агап, Эдуард, Эмиль" - есть такая строка имён, полученная к примеру запросом из базы данных. Получена именно в виде одной строки.<br />
+            <br />
+            Нужно: 
+            вывести текст "Имена на букву: " и рядом сформировать сначала список всех букв (+ в конце кнопка-ссылка "Все имена"), с которых начинаются имена.<br />
+            <br />
+            Ниже вывести в столбик все имена в этом же порядке, в котором они идут в строке. И чтобы при клике по букве в списке букв, видны оставались только имена, которые начинаются на эту букву.<br />
+            <hr />   
+    </div>
+
+    <div>
+           <span>Имена на букву: </span> 
+           <p id="Name"></p>
+           
+           <p>Список всех имен из строки в порядке их следования:</p>
+           <div id="nameList"></div>
+
+    </div>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
