@@ -50,7 +50,7 @@ $( document ).ready(function() {
     }
 
 
-    //Конкатенирую все имена в р для дальнейшего списка имен на страницу
+    //Конкатенирую все имена в р для дальнейшего вывода списка имен на страницу
     var listNameForPage = '';
     for(var k = 0; k < nameList.length; k++) {
         listNameForPage += "<p id=" + nameList[k][0] + ">" + nameList[k] + "</p>";
@@ -76,9 +76,11 @@ $( document ).ready(function() {
         $('#nameList p').each(function(index) {
             var attrName = $(this).attr('id');
             if(attrLetter === attrName) {
-                
+                $('this').removeClass('hidden');
+                $(this).addClass('invisible');
             } else {
                 $(this).addClass('hidden');
+                $(this).removeClass('invisible');
             }
         });
     });
